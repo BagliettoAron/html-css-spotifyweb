@@ -1,0 +1,94 @@
+
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* TEST */
+    background-color: lightgray;
+}
+
+/* MAIN */
+.main{
+    display: flex;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    
+
+}
+
+/* main-leftside */
+.main-leftside{
+
+    width:300px;
+    height: 100%;
+    background-color: black;
+}
+/* /main-leftside */
+
+/* main-rightside */
+.main-rightside{
+    display: flex;
+    width: calc(100% - 300px);
+    height: 100%;
+    background-color: #141922;
+    overflow-y: auto;
+}
+/* /main-rightside */
+
+/* rightside-header */
+.rightside-header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: inherit;
+    height: 70px;
+    /* TEST */
+    background-color: rgba(204, 0, 255, 0.452);
+
+
+}
+/* /rightside-header */
+
+/* rightside-main-content */
+.rightside-main-content{
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    /* TEST */
+    background-color: lightblue;
+}
+/* /rightside-main-content */
+/* rightside-nav */
+
+.rightside-nav{
+    display: flex;
+    margin-top: 70px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 7%;
+    /* TEST */
+    background-color: bisque;
+    
+
+
+}
+
+/* /rightside-nav */
+/* /MAIN */
+
+
+/* FOOTER */
+.footer{
+    width: 100vw;
+    height: 100px;
+    background-color: #282828;
+
+}
+/* /FOOTER */

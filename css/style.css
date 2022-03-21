@@ -22,10 +22,6 @@ html{
     color: white;
 }
 
-.grey-text{
-    color: grey;
-}
-
 .album{
     display: block;
     min-height: 100%;
@@ -37,6 +33,11 @@ html{
 
 .album img{
     max-width: 100%;
+    max-height: 100%;
+}
+
+.album-radius img{
+    border-radius: 50%;
 }
 
 .album .album-title{
@@ -48,8 +49,13 @@ html{
 .album .album-subtitle{
     text-align: center;
     padding-top: .5rem;
+    
+}
+
+.rightside-smalltxt{
     font-size: .7rem;
     font-weight: 550;
+    color: grey;
 }
 
 .flex-wrap{
@@ -57,6 +63,7 @@ html{
 }
 
 /* MAIN */
+
 .main{
     display: flex;
     width: 100vw;
@@ -66,7 +73,7 @@ html{
 /* main-leftside */
 .main-leftside{
 
-    width:300px;
+    width:200px;
     height: 100%;
     background-color: black;
 }
@@ -75,7 +82,7 @@ html{
 /* main-rightside */
 .main-rightside{
     display: flex;
-    width: calc(100% - 300px);
+    width: calc(100% - 200px);
     height: 100%;
     background-color: #141922;
     overflow-y: auto;
@@ -127,24 +134,30 @@ html{
 /* rightside-albums */
 
 .rightside-albums{
+    padding-left: 1vw;
     width: 100%;
-    height:calc(100% - 50px);
-    padding: 1rem;
     
-
 }
-
 
 .rightside-albums>h2{
     font-size: 1.5rem;
-    padding-bottom: 1rem;
-    display: block;
 }
 
-.rightside-albums .recently-played{
+.album-section{
     justify-content: space-between;
-    padding-right: 2rem;
+    padding-right: 2vw;
+    padding-top: 1rem;
 }
+
+.rightside-albums:nth-child(2)>h2{
+    padding-bottom: .5rem;
+}
+
+.rightside-albums .album-suggestion{
+    padding-bottom: 1.5rem;
+}
+
+
 
 
 

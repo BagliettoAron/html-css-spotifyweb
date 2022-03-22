@@ -27,14 +27,31 @@ html{
     min-height: 100%;
     width: 10vw;
     padding-bottom: 2rem;
-
+    margin: 5px;
     background-color: blueviolet;
 }
 
+.image-wrap{
+    position: relative;
+}
+
+FIXME:
+.overlay-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+}
+
+
+
 .album img{
     max-width: 100%;
-    max-height: 100%;
+    height: auto;
 }
+
+
 
 .album-radius img{
     border-radius: 50%;
@@ -60,6 +77,14 @@ html{
 
 .flex-wrap{
     display: flex;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
 }
 
 /* MAIN */
@@ -121,12 +146,23 @@ html{
     display: flex;
     align-items: center;
     justify-content: center; 
-
     background-color: lightskyblue;
     width: 100%;
     height: 50px;
-    
 }
+
+
+
+.rightside-nav ul li{
+    padding: 0 1rem;
+    text-transform: uppercase;
+}
+
+.rightside-nav ul li a{
+    color: inherit;
+}
+
+
 
 
 /* /rightside-nav */

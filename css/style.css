@@ -91,17 +91,53 @@ a{
 
 .main{
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: calc(100vh - 100px);
 }
 
 /* main-leftside */
 .main-leftside{
-
     width:200px;
     height: 100%;
     background-color: black;
+
+    flex-direction: column;
+    overflow: hidden;
 }
+
+.leftside-top{
+    height: calc(100% - 80px );
+    background-color: antiquewhite;
+    min-height: 600px;
+}
+
+.leftside-logo{
+    
+    /* TEST */
+    height: 70px;
+    background-color: aquamarine;
+}
+
+.leftside-button{
+    /* TEST */
+    height: 150px;
+    background-color: lightgreen;
+}
+
+.leftside-playlist{
+    /* TEST */
+    height: calc(100% - 220px);
+    background-color: lightsalmon;
+    flex-grow: 1;
+}
+
+.leftside-bottom{
+    height: 80px;
+    /* TEST */
+    background-color: aqua;
+}
+
+
 /* /main-leftside */
 
 /* main-rightside */
@@ -208,6 +244,7 @@ a{
     width: 100vw;
     height: 100px;
     background-color: #282828;
+    overflow: hidden;
 
 }
 /* /FOOTER */

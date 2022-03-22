@@ -69,7 +69,7 @@ FIXME:
     
 }
 
-.rightside-smalltxt{
+.smalltxt{
     font-size: .7rem;
     font-weight: 550;
     color: grey;
@@ -125,9 +125,6 @@ a{
     top: 50%;
     left: 40%;
     transform: translate(-50%, -50%);
-    
-
-    
 }
 
 
@@ -136,8 +133,24 @@ a{
 
 .leftside-button{
     /* TEST */
-    height: 150px;
+    padding: .5rem;
     background-color: lightgreen;
+}
+
+.button{
+    padding-bottom: 1rem;
+}
+.button img{
+    height: 1.5rem;
+    vertical-align: middle;
+    color: #808080;
+}
+
+.button span{
+    vertical-align: middle;
+    font-size: .7rem;
+    padding-left: .2rem;
+   
 }
 
 .leftside-playlist{
@@ -145,6 +158,7 @@ a{
     background-color: lightsalmon;
     flex-grow: 1;
     overflow: hidden;
+    padding: .5rem;
 
   
     
@@ -153,12 +167,34 @@ a{
 .leftside-playlist>h2{
     text-transform: uppercase;
     color: white;
+    padding-bottom: 1rem;
 }
 
-.leftside-playlist>ul{
-    height: 80%;
+.create-playlist{
+    padding-bottom: 1rem;
+}
+
+.create-playlist i{
+    font-size: 2.2rem;
+    color: grey;
+    vertical-align: middle;
+}
+
+.create-playlist span{
+    color: grey;
+    vertical-align: middle;
+    font-weight: 500;
+}
+
+
+.leftside-playlist ul{
+    height: 70%;
     overflow-y: auto;
     padding-bottom: 2rem;
+}
+
+.leftside-playlist ul li{
+    padding: .5rem 0;
 }
 
 

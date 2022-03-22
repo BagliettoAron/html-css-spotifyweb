@@ -247,7 +247,7 @@ a{
 .user-name{
     height: 30px;
     float: left;
-    padding-left: .5rem;
+    padding-left: 1rem;
     line-height: 30px;
     color: white;
     font-weight: 600;

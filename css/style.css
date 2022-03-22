@@ -108,15 +108,31 @@ a{
 .leftside-top{
     height: calc(100% - 80px );
     background-color: antiquewhite;
-    min-height: 600px;
+    min-height: 500px;
+    flex-direction: column;
 }
 
 .leftside-logo{
-    
-    /* TEST */
+    position: relative;
+    padding: .5rem;
     height: 70px;
+    /* TEST */
     background-color: aquamarine;
 }
+
+.leftside-logo>img{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    
+
+    
+}
+
+
+
+
 
 .leftside-button{
     /* TEST */
@@ -126,13 +142,28 @@ a{
 
 .leftside-playlist{
     /* TEST */
-    height: calc(100% - 220px);
     background-color: lightsalmon;
     flex-grow: 1;
+    overflow: hidden;
+
+  
+    
 }
 
+.leftside-playlist>h2{
+    text-transform: uppercase;
+    color: white;
+}
+
+.leftside-playlist>ul{
+    height: 80%;
+    overflow-y: auto;
+    padding-bottom: 2rem;
+}
+
+
 .leftside-bottom{
-    height: 80px;
+    max-height: 80px;
     /* TEST */
     background-color: aqua;
 }

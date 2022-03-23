@@ -93,6 +93,14 @@ a{
     clear: both;
 }
 
+a:hover,
+a li:hover,
+a span:hover,
+a>img:hover{
+    color: white;
+}
+
+
 
 /* MAIN */
 
@@ -187,6 +195,18 @@ a{
     color: #808080;
 }
 
+.button img:nth-child(2){
+    display: none;
+}
+
+.button a:hover img:first-child{
+    display: none;
+}
+
+.button a:hover img:nth-child(2){
+    display: inline-block;
+}
+
 .button span{
     vertical-align: middle;
     font-size: .7rem;
@@ -238,6 +258,11 @@ a{
     background-color: grey;
 }
 
+.leftside-playlist a:hover .create-plus{
+    background-color: white;
+
+}
+
 .create-txt{
     padding-left: .5rem;
     color: grey;
@@ -278,6 +303,18 @@ a{
 .install-app a>img{
     width: 15px;
     vertical-align: middle;
+}
+
+.install-app img:nth-child(2){
+    display: none;
+}
+
+.install-app a:hover img:first-child{
+    display: none;
+}
+
+.install-app a:hover img:nth-child(2){
+    display: inline-block;
 }
 
 @media screen and (max-width:600px) {

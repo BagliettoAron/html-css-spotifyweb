@@ -172,17 +172,26 @@ a{
 
 .create-playlist{
     padding-bottom: 1rem;
+    display: flex;
+    vertical-align: middle;
+    /* width: 100%; */
 }
 
-.create-playlist i{
+.create-playlist .create-plus{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 2.2rem;
-    color: grey;
-    vertical-align: middle;
+    color: black;
+    background-color: grey;
 }
 
-.create-playlist span{
+.create-txt{
+    padding-left: .5rem;
     color: grey;
-    vertical-align: middle;
+    line-height: 30px;
     font-weight: 500;
 }
 

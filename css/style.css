@@ -497,6 +497,34 @@ a>img:hover{
     height: 100px;
     background-color: #282828;
     overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.album-footer-info{
+    height: 100%;
+    max-width: 200px;
+    /* TEST */
+    background-color: aqua;
 
 }
+
+.main-control-player{
+    height: 100%;
+    max-width: 30%;
+    /* TEST */
+    background-color: beige;
+
+}
+
+.audio-share-footer{
+    height: 100%;
+    max-width: 200px;
+    /* TEST */
+    background-color: cadetblue;
+}
+
+
+
+
 /* /FOOTER */

@@ -499,31 +499,165 @@ a>img:hover{
     overflow: hidden;
     display: flex;
     justify-content: space-between;
+    padding: 0 .5vw;
 }
 
+/* album footer info */
 .album-footer-info{
     height: 100%;
-    max-width: 200px;
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
     /* TEST */
     background-color: aqua;
-
 }
 
+.album-footer{
+    width: 50%;
+    height: 100%;
+    padding: 1.3rem .5rem;
+    
+    /* TEST */
+    background-color: blueviolet; 
+}
+
+.album-footer img{
+    height: 60px;
+}
+
+.album-info-footer{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.album-info-footer .white-text{
+    font-weight: 700;
+}
+
+
+.album-icon-footer{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: grey;
+    /* display: flex; */
+    /* TEST */
+    background-color: blue;
+}
+
+.album-icon-footer i{
+    padding: .3rem;
+}
+/* /album footer info */
+
+/* main-control-player */
 .main-control-player{
     height: 100%;
-    max-width: 30%;
+    max-width: 40%;
+    overflow: hidden;
     /* TEST */
     background-color: beige;
+    border: 1px solid red;
 
 }
 
+.button-player{
+    /* TEST */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 5vw;
+    
+    
+    background-color: burlywood;
+}
+
+.button-player a i{
+    padding: 0 2vw;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.button-player .player i{
+    font-size: 3rem;
+} 
+
+.bar-player{
+    /* TEST */
+    flex-shrink: 1;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: chartreuse;
+}
+
+.bar-player .bar{
+    height: 3px;
+    width: 300vw;
+    background-color: grey;
+}
+
+.bar-player .bar-white{
+    height: 3px;
+    width: 15%;
+    background-color: white;
+}
+
+.bar-player .time-to-start,
+.bar-player .time-to-end {
+    font-size: .7rem;
+    color: white;
+}
+
+.bar-player .time-to-start{
+    padding: 0 1vw;
+}
+
+.bar-player .time-to-end{
+    padding:0 1vw;
+}
+/* /main-control-player */
+
+/* audio-share-footer */
 .audio-share-footer{
     height: 100%;
-    max-width: 200px;
+    max-width: 15rem;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     /* TEST */
     background-color: cadetblue;
 }
 
+.audio-share-footer i{
+    padding: .5vw;
+    color: white;
+}
+
+.audio-share-footer .bar{
+    display: flex;
+    height: 3px;
+    width: 5vw;
+    background-color: grey;
+}
+
+.audio-share-footer .bar-white{
+    display: flex;
+    height: 3px;
+    width: 30%;
+    background-color: white;
+}
+/* /audio-share-footer */
 
 
 

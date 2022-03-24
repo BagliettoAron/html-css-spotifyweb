@@ -44,14 +44,10 @@ FIXME:
     font-size: 4rem;
 }
 
-
-
 .album img{
     max-width: 100%;
     height: auto;
 }
-
-
 
 .album-radius img{
     border-radius: 50%;
@@ -66,7 +62,6 @@ FIXME:
 .album .album-subtitle{
     text-align: center;
     padding-top: .5rem;
-    
 }
 
 .smalltxt{
@@ -100,13 +95,32 @@ a>img:hover{
     color: white;
 }
 
+.bar-white-end{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0%, -40%);
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    display: none;
+}
 
+.bar:hover .bar-white-end{
+    display: block;
+}
+
+.bar:hover .bar-white{
+    background-color: chartreuse;
+}
 
 /* MAIN */
 
 .main{
     display: flex;
     width: 100%;
+    min-width: 566px;
     height: calc(100vh - 100px);
 }
 
@@ -493,6 +507,7 @@ a>img:hover{
 
 /* FOOTER */
 .footer{
+    min-width: 566px;
     width: 100vw;
     height: 100px;
     background-color: #282828;
@@ -504,29 +519,26 @@ a>img:hover{
 
 /* album footer info */
 .album-footer-info{
+    /* overflow: hidden; */
     height: 100%;
-    width: 15rem;
+    width: 10rem;
+    flex-shrink: 0;
     display: flex;
     justify-content: space-between;
-    /* TEST */
-    background-color: aqua;
 }
 
 .album-footer{
-    width: 50%;
+    width: 40%;
     height: 100%;
     padding: 1.3rem .5rem;
-    
-    /* TEST */
-    background-color: blueviolet; 
 }
 
 .album-footer img{
     height: 60px;
 }
 
-.album-info-footer{
-    width: 50%;
+.album-footer{
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -536,20 +548,16 @@ a>img:hover{
     font-weight: 700;
 }
 
-
 .album-icon-footer{
-    width: 30%;
+    width: 20%;
     height: 100%;
     display: flex;
     align-items: center;
-    color: grey;
-    /* display: flex; */
-    /* TEST */
-    background-color: blue;
 }
 
 .album-icon-footer i{
     padding: .3rem;
+    color: grey;
 }
 /* /album footer info */
 
@@ -557,11 +565,8 @@ a>img:hover{
 .main-control-player{
     height: 100%;
     max-width: 40%;
+    min-width: 240px;
     overflow: hidden;
-    /* TEST */
-    background-color: beige;
-    border: 1px solid red;
-
 }
 
 .button-player{
@@ -569,47 +574,46 @@ a>img:hover{
     width: 100%;
     height: 50%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     justify-content: space-around;
     align-items: center;
     padding: 0 5vw;
-    
-    
-    background-color: burlywood;
 }
 
 .button-player a i{
     padding: 0 2vw;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .button-player .player i{
-    font-size: 3rem;
+    font-size: 2rem;
 } 
 
 .bar-player{
-    /* TEST */
+
     flex-shrink: 1;
     width: 100%;
     height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    background-color: chartreuse;
 }
 
-.bar-player .bar{
+.bar{
     height: 3px;
     width: 300vw;
+    border-radius: 3px;
     background-color: grey;
+    cursor: pointer;
 }
 
-.bar-player .bar-white{
+.bar-white{
     height: 3px;
     width: 15%;
+    border-radius: 3px;
     background-color: white;
+    position: relative;
 }
 
 .bar-player .time-to-start,
@@ -629,14 +633,17 @@ a>img:hover{
 
 /* audio-share-footer */
 .audio-share-footer{
+    flex-shrink: 0;
     height: 100%;
-    max-width: 15rem;
+    width: 10rem;
     display: flex;
-    justify-content: center;
-    justify-content: space-between;
     align-items: center;
-    /* TEST */
-    background-color: cadetblue;
+}
+
+.icon-audio-section{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .audio-share-footer i{
@@ -644,17 +651,24 @@ a>img:hover{
     color: white;
 }
 
-.audio-share-footer .bar{
+.bar-audio-section{
+    width: 50%;
     display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.audio-share-footer .bar{
+    width: 80%;
     height: 3px;
-    width: 5vw;
+    border-radius: 3px;
     background-color: grey;
 }
 
 .audio-share-footer .bar-white{
-    display: flex;
     height: 3px;
-    width: 30%;
+    border-radius: 3px;
+    width: 40%;
     background-color: white;
 }
 /* /audio-share-footer */

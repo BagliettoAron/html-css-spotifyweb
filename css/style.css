@@ -686,6 +686,7 @@ a>img:hover{
 }
 
 .bar-audio-section{
+    margin-left: .5rem;
     width: 50%;
     display: flex;
     justify-content: center;

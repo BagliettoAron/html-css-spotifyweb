@@ -442,22 +442,42 @@ a>img:hover{
 /* rightside-nav */
 
 .rightside-nav{
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    background-color: lightskyblue;
+    display: inline-block;
+    line-height: 50px;
     width: 100%;
     height: 50px;
 }
 
+
+.rightside-nav ul{
+    text-align: center;
+    
+}
 .rightside-nav ul li{
-    padding: 0 1rem;
+    display: inline-block;
+    padding: 0 1vw;
     text-transform: uppercase;
 }
 
 .rightside-nav ul li a{
-    color: inherit;
+    color: grey;
+    border-bottom: .2rem solid transparent;
 }
+
+/* hover properties */
+.rightside-nav li a:hover{
+    color: white;
+}
+
+.active-bottom .bottom-green{
+    margin: 0 auto;
+    margin-top: -15px;
+    width: 2rem;
+    height: .2rem;
+    background-color: green;
+}
+/* /hover properties */
+
 /* /rightside-nav */
 
 /* rightside-albums */

@@ -581,9 +581,14 @@ a>img:hover{
     align-items: center;
 }
 
+
 .album-icon-footer i{
     padding: .3rem;
     color: grey;
+}
+
+.album-icon-footer i:hover{
+    color: white;
 }
 
 /* footer center */

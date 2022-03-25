@@ -152,12 +152,11 @@ a>img:hover{
     height: calc(100vh - 100px);
 }
 
-/* main-leftside */
+/* left sidebar */
 .main-leftside{
     width:200px;
     height: 100%;
     background-color: black;
-
     flex-direction: column;
     overflow: hidden;
 }
@@ -168,13 +167,14 @@ a>img:hover{
     }
 }
 
+/* left sidebar top */
 .leftside-top{
     height: calc(100% - 80px );
-    /* background-color: antiquewhite; */
     min-height: 500px;
     flex-direction: column;
 }
 
+/* left sidebar logo */
 .leftside-logo{
     position: relative;
     padding: .5rem;
@@ -204,6 +204,7 @@ a>img:hover{
     }
 }
 
+/* left sidebar buttons */
 .leftside-button{
     padding: .3rem;
 }
@@ -253,6 +254,7 @@ a>img:hover{
     }
 }
 
+/* left sidebar playlist */
 .leftside-playlist{
     flex-grow: 1;
     overflow: hidden;
@@ -398,7 +400,6 @@ a>img:hover{
         display: none;
     }
 }
-/* /main-leftside */
 
 /* main-rightside */
 .main-rightside{
@@ -414,7 +415,6 @@ a>img:hover{
         width:calc(100% - 50px);
     }
 }
-/* /main-rightside */
 
 /* rightside-header */
 .rightside-header{
@@ -431,7 +431,7 @@ a>img:hover{
 }
 
 .cta-wrap{
-    margin-right: 1rem;
+    margin-right: .5rem;
     width: 20rem;
     height: 100%;
     display: flex;
@@ -459,25 +459,21 @@ a>img:hover{
     font-size: 1.1rem;
 }
 
-/* /rightside-header */
-
 /* rightside-main-content */
 .rightside-main-content{
     margin-top: 70px;
     width: 100%;
     height: calc(100% - 70px);
 }
-/* /rightside-main-content */
 
-/* rightside-nav */
 
+/* rightside-nav & album section */
 .rightside-nav{
     display: inline-block;
     line-height: 50px;
     width: 100%;
     height: 50px;
 }
-
 
 .rightside-nav ul{
     text-align: center;
@@ -508,9 +504,7 @@ a>img:hover{
 }
 /* /hover properties */
 
-/* /rightside-nav */
-
-/* rightside-albums */
+/* rightside-album section */
 .rightside-albums{
     padding-left: 1vw;
     width: 100%;
@@ -535,6 +529,7 @@ a>img:hover{
     padding-bottom: 1.5rem;
 }
 /* /rightside-albums */
+
 /* /MAIN */
 
 /* FOOTER */
@@ -549,9 +544,8 @@ a>img:hover{
     padding: 0 .5vw;
 }
 
-/* album footer info */
+/* footer left side */
 .album-footer-info{
-    /* overflow: hidden; */
     height: 100%;
     width: 10rem;
     flex-shrink: 0;
@@ -591,9 +585,8 @@ a>img:hover{
     padding: .3rem;
     color: grey;
 }
-/* /album footer info */
 
-/* main-control-player */
+/* footer center */
 .main-control-player{
     height: 100%;
     max-width: 40%;
@@ -671,9 +664,8 @@ a>img:hover{
 .bar-player .time-to-end{
     padding:0 1vw;
 }
-/* /main-control-player */
 
-/* audio-share-footer */
+/* footer right side */
 .audio-share-footer{
     flex-shrink: 0;
     height: 100%;
@@ -713,8 +705,6 @@ a>img:hover{
     width: 40%;
     background-color: white;
 }
-/* /audio-share-footer */
-
 
 
 /* /FOOTER */
